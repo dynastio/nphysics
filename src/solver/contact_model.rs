@@ -1,7 +1,8 @@
 #![allow(missing_docs)]
 
 use downcast_rs::Downcast;
-use na::{DVector, RealField};
+use crate::RealField;
+use na::{DVector};
 use ncollide::query::ContactId;
 
 use crate::detection::ColliderContactManifold;

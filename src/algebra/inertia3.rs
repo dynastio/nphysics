@@ -1,7 +1,8 @@
 use std::ops::{Add, AddAssign, Mul, Neg};
 
 use crate::algebra::{Force3, Velocity3};
-use na::{self, Isometry3, Matrix3, Matrix6, RealField, U3};
+use crate::RealField;
+use na::{self, Isometry3, Matrix3, Matrix6, U3};
 
 /// The inertia of a rigid body grouping both its mass and its angular inertia.
 #[derive(Clone, Copy, Debug)]

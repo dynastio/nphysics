@@ -1,5 +1,6 @@
 use na::storage::StorageMut;
-use na::{self, DVector, Dim, Dynamic, RealField, Vector, VectorSlice, Const};
+use crate::RealField;
+use na::{self, DVector, Dim, Dynamic, Vector, VectorSlice, Const};
 
 use ncollide::query::ContactId;
 

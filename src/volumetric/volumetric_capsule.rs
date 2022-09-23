@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 use ncollide::shape::Capsule;
 
 use crate::math::{AngularInertia, Point};

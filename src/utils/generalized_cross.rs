@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 use na::{Matrix2, Matrix3, RowVector2, Vector1, Vector2, Vector3};
 
 /// This is a non-standard generalization of the cross product design exclusively to group the

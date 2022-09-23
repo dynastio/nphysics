@@ -1,4 +1,5 @@
-use na::{self, Dim, Dynamic, RealField, VectorSliceMut, U1, Const};
+use crate::RealField;
+use na::{self, Dim, Dynamic, VectorSliceMut, U1, Const};
 use std::ops::MulAssign;
 
 use crate::joint::JointConstraintSet;

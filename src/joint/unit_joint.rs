@@ -1,6 +1,7 @@
 #![allow(missing_docs)] // For downcast.
 
-use na::{DVectorSliceMut, RealField};
+use crate::RealField;
+use na::{DVectorSliceMut};
 
 use crate::joint::{Joint, JointMotor};
 use crate::object::{Body, BodyPartHandle, Multibody, MultibodyLink};

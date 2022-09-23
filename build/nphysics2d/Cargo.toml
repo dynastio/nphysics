@@ -35,11 +35,11 @@ generational-arena = "0.2" # For default body/collide/constraint/force sets.
 smallvec   = "1"
 lazy_static = "1"
 simba      = "0.5"
-nalgebra   = { version = "0.28", features = [ "sparse" ] }
+nalgebra   = { version = "0.31", features = [ "sparse" ] }
 approx     = "0.5"
 downcast-rs = "1"
 bitflags   = "1"
-ncollide2d = "0.31"
+ncollide2d = { version = "0.33", git = "https://github.com/dynastio/ncollide.git" }
 instant    = { version = "0.1", features = [ "now" ]}
 
 [target.wasm32-unknown-unknown.dependencies]

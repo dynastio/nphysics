@@ -1,4 +1,5 @@
-use na::{DVectorSlice, DVectorSliceMut, RealField};
+use crate::RealField;
+use na::{DVectorSlice, DVectorSliceMut};
 use std::any::Any;
 
 use crate::math::{
@@ -69,8 +70,8 @@ impl<N: RealField> RigidBody<N> {
             acceleration: Velocity::zero(),
             linear_damping: N::zero(),
             angular_damping: N::zero(),
-            max_linear_velocity: N::max_value(),
-            max_angular_velocity: N::max_value(),
+            max_linear_velocity: N::max_bound(),
+            max_angular_velocity: N::max_bound(),
             status: BodyStatus::Dynamic,
             gravity_enabled: true,
             linear_motion_interpolation_enabled: false,
@@ -978,8 +979,8 @@ impl<'a, N: RealField> RigidBodyDesc<N> {
             velocity: Velocity::zero(),
             linear_damping: N::zero(),
             angular_damping: N::zero(),
-            max_linear_velocity: N::max_value(),
-            max_angular_velocity: N::max_value(),
+            max_linear_velocity: N::max_bound(),
+            max_angular_velocity: N::max_bound(),
             local_inertia: Inertia::zero(),
             local_center_of_mass: Point::origin(),
             status: BodyStatus::Dynamic,

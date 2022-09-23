@@ -1,6 +1,7 @@
 use std::collections::{HashMap, HashSet};
 
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 use ncollide;
 use ncollide::interpolation::{RigidMotion, RigidMotionComposition};
 use ncollide::narrow_phase::Interaction;

@@ -13,7 +13,8 @@ use crate::object::{
 use crate::solver::{
     ConstraintSet, ForceDirection, IntegrationParameters, NonlinearSORProx, SORProx,
 };
-use na::{self, DMatrix, DVector, DVectorSlice, DVectorSliceMut, Dynamic, OMatrix, RealField, LU};
+use crate::RealField;
+use na::{self, DMatrix, DVector, DVectorSlice, DVectorSliceMut, Dynamic, OMatrix, LU};
 use ncollide::shape::DeformationsType;
 
 use crate::utils::{GeneralizedCross, IndexMut2};

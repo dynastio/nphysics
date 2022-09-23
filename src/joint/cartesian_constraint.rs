@@ -1,4 +1,5 @@
-use na::{DVector, RealField};
+use crate::RealField;
+use na::{DVector};
 use std::ops::Range;
 
 use crate::joint::JointConstraint;
@@ -45,7 +46,7 @@ impl<N: RealField, Handle: BodyHandle> CartesianConstraint<N, Handle> {
             ref_frame1,
             anchor2,
             ref_frame2,
-            break_torque_squared: N::max_value(),
+            break_torque_squared: N::max_bound(),
             broken: false,
             ang_impulses: AngularVector::zeros(),
             bilateral_ground_rng: 0..0,

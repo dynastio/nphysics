@@ -3,7 +3,7 @@ use std::hash::Hash;
 
 use crate::object::{Body, DefaultColliderHandle, Multibody, RigidBody};
 use crate::world::GeometricalWorld;
-use na::RealField;
+use crate::RealField;
 
 /// Trait auto-implemented for types that can be used as a Body handle.
 ///

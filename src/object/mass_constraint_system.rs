@@ -7,7 +7,8 @@ use std::ops::{AddAssign, SubAssign};
 
 #[cfg(feature = "dim3")]
 use na::Vector2;
-use na::{self, DVector, DVectorSlice, DVectorSliceMut, RealField, Unit};
+use crate::RealField;
+use na::{self, DVector, DVectorSlice, DVectorSliceMut, Unit};
 #[cfg(feature = "dim3")]
 use ncollide::procedural;
 #[cfg(feature = "dim3")]

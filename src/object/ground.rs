@@ -1,4 +1,5 @@
-use na::{DVectorSlice, DVectorSliceMut, RealField};
+use crate::RealField;
+use na::{DVectorSlice, DVectorSliceMut};
 
 use crate::math::{Force, ForceType, Inertia, Isometry, Point, Translation, Vector, Velocity};
 use crate::object::{

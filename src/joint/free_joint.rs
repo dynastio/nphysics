@@ -1,4 +1,5 @@
-use na::{DVectorSliceMut, RealField};
+use crate::RealField;
+use na::{DVectorSliceMut};
 
 use crate::joint::Joint;
 

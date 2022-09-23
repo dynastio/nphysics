@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 
 use crate::force_generator::ForceGenerator;
 use crate::math::{Force, ForceType, Vector, Velocity};

@@ -2,7 +2,8 @@
 
 use downcast_rs::Downcast;
 
-use na::{self, DVectorSlice, DVectorSliceMut, RealField};
+use crate::RealField;
+use na::{self, DVectorSlice, DVectorSliceMut};
 use ncollide::interpolation::{
     ConstantLinearVelocityRigidMotion, ConstantVelocityRigidMotion, RigidMotion,
 };

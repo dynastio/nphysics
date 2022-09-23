@@ -1,4 +1,5 @@
-use na::{self, DVector, RealField, Unit};
+use crate::RealField;
+use na::{self, DVector, Unit};
 use ncollide::query::ContactId;
 use slotmap::Key;
 use std::ops::Range;

@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 use ncollide::query::{ContactManifold, TrackedContact};
 use ncollide::shape::FeatureId;
 

@@ -2,8 +2,9 @@ use either::Either;
 
 #[cfg(feature = "dim3")]
 use na::Point4;
+use crate::RealField;
 use na::{
-    Cholesky, DVector, DVectorSlice, DVectorSliceMut, Dynamic, Point2, Point3, RealField,
+    Cholesky, DVector, DVectorSlice, DVectorSliceMut, Dynamic, Point2, Point3,
     VectorSliceMut,
 };
 use ncollide::query::PointQueryWithLocation;

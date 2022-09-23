@@ -1,7 +1,7 @@
 use std::collections::{hash_map, HashMap};
 use std::marker::PhantomData;
 
-use na::RealField;
+use crate::RealField;
 
 use ncollide::bounding_volume::AABB;
 use ncollide::pipeline::{

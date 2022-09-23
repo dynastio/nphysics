@@ -1,6 +1,6 @@
 use std::ops::{Deref, DerefMut};
 
-use na::RealField;
+use crate::RealField;
 
 use crate::joint::Joint;
 use crate::math::{Inertia, Isometry, Point, Vector, Velocity};

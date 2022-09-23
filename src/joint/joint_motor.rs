@@ -1,5 +1,5 @@
 use crate::solver::ImpulseLimits;
-use na::RealField;
+use crate::RealField;
 use num::Zero;
 
 /// Description of a motor applied to a joint.
@@ -18,12 +18,12 @@ pub struct JointMotor<V, N: RealField> {
 impl<V: Zero, N: RealField> JointMotor<V, N> {
     /// Create a disable motor with zero desired velocity.
     ///
-    /// The max force is initialized to a virtually infinite value, i.e., `N::max_value()`.
+    /// The max force is initialized to a virtually infinite value, i.e., `N::max_bound()`.
     pub fn new() -> Self {
         JointMotor {
             desired_velocity: V::zero(),
-            max_velocity: N::max_value(),
-            max_force: N::max_value(),
+            max_velocity: N::max_bound(),
+            max_force: N::max_bound(),
             enabled: false,
         }
     }

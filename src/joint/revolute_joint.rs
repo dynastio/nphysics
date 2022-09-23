@@ -1,6 +1,7 @@
 #![macro_use]
 
-use na::{self, DVectorSliceMut, RealField, Unit};
+use crate::RealField;
+use na::{self, DVectorSliceMut, Unit};
 
 use crate::joint::{self, Joint, JointMotor, UnitJoint};
 use crate::math::{

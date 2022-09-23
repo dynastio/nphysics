@@ -1,7 +1,8 @@
 #![allow(missing_docs)] // For downcast.
 
 use downcast_rs::Downcast;
-use na::{DVectorSliceMut, RealField};
+use crate::RealField;
+use na::{DVectorSliceMut};
 
 use crate::math::{Isometry, JacobianSliceMut, Vector, Velocity};
 use crate::object::{BodyPartHandle, Multibody, MultibodyLink};

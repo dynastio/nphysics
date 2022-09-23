@@ -1,6 +1,6 @@
 use crate::math::{AngularInertia, Point};
 use crate::volumetric::Volumetric;
-use na::RealField;
+use crate::RealField;
 #[cfg(feature = "dim3")]
 use ncollide::shape::ConvexHull;
 #[cfg(feature = "dim2")]

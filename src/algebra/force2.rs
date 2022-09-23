@@ -1,5 +1,6 @@
 use na::storage::Storage;
-use na::{self, Isometry2, Point2, RealField, Vector, Vector1, Vector2, Vector3, U3};
+use crate::RealField;
+use na::{self, Isometry2, Point2, Vector, Vector1, Vector2, Vector3, U3};
 use std::mem;
 use std::ops::{Add, AddAssign, Mul, Neg, Sub, SubAssign};
 

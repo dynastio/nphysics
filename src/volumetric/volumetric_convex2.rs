@@ -3,7 +3,7 @@ use num::Zero;
 use crate::math::{AngularInertia, Point};
 use crate::volumetric::Volumetric;
 use na;
-use na::RealField;
+use crate::RealField;
 use na::{Matrix1, Point2};
 use ncollide::shape::ConvexPolygon;
 use ncollide::utils;

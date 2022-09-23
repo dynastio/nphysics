@@ -2,7 +2,8 @@ use std::mem;
 use std::ops::{Add, AddAssign, Mul, Neg};
 
 use crate::algebra::{Force2, Velocity2};
-use na::{self, Isometry2, Matrix1, Matrix3, RealField, Vector3};
+use crate::RealField;
+use na::{self, Isometry2, Matrix1, Matrix3, Vector3};
 
 /// The inertia of a rigid body grouping both its mass and its angular inertia.
 #[derive(Clone, Copy, Debug)]

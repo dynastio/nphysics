@@ -2,7 +2,8 @@
 
 #[cfg(feature = "dim3")]
 use na;
-use na::{DVector, DVectorSlice, RealField, Unit};
+use crate::RealField;
+use na::{DVector, DVectorSlice, Unit};
 use std::ops::Neg;
 
 use crate::math::{AngularVector, Force, Point, Rotation, Vector};
@@ -190,8 +191,8 @@ pub fn cancel_relative_linear_velocity_wrt_axis<
     constraints: &mut LinearConstraints<N, Id>,
 ) {
     let limits = ImpulseLimits::Independent {
-        min: -N::max_value(),
-        max: N::max_value(),
+        min: -N::max_bound(),
+        max: N::max_bound(),
     };
 
     let force = ForceDirection::Linear(*axis);
@@ -445,8 +446,8 @@ pub fn cancel_relative_angular_velocity_wrt_axis<
     constraints: &mut LinearConstraints<N, Id>,
 ) {
     let limits = ImpulseLimits::Independent {
-        min: -N::max_value(),
-        max: N::max_value(),
+        min: -N::max_bound(),
+        max: N::max_bound(),
     };
 
     let (ext_vels1, ext_vels2) = split_ext_vels(body1, body2, assembly_id1, assembly_id2, ext_vels);
@@ -636,8 +637,8 @@ pub fn restrict_relative_angular_velocity_to_axis<
     constraints: &mut LinearConstraints<N, usize>,
 ) {
     let limits = ImpulseLimits::Independent {
-        min: -N::max_value(),
-        max: N::max_value(),
+        min: -N::max_bound(),
+        max: N::max_bound(),
     };
 
     let (ext_vels1, ext_vels2) = split_ext_vels(body1, body2, assembly_id1, assembly_id2, ext_vels);
@@ -793,8 +794,8 @@ pub fn restrict_relative_linear_velocity_to_axis<
     constraints: &mut LinearConstraints<N, usize>,
 ) {
     let limits = ImpulseLimits::Independent {
-        min: -N::max_value(),
-        max: N::max_value(),
+        min: -N::max_bound(),
+        max: N::max_bound(),
     };
 
     let (ext_vels1, ext_vels2) = split_ext_vels(body1, body2, assembly_id1, assembly_id2, ext_vels);

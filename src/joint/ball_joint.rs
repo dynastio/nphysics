@@ -1,5 +1,6 @@
+use crate::RealField;
 use na::{
-    self, DVectorSliceMut, Isometry3, Matrix3, RealField, Translation3, UnitQuaternion, Vector3,
+    self, DVectorSliceMut, Isometry3, Matrix3, Translation3, UnitQuaternion, Vector3,
     VectorSlice3,
 };
 

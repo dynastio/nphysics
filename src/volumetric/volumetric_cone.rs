@@ -1,7 +1,8 @@
 use num::Zero;
 use std::ops::IndexMut;
 
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 use ncollide::math::Point;
 
 /// The volume of a cone.

@@ -260,6 +260,14 @@ pub use ncollide2d;
 pub use ncollide3d;
 pub use simba;
 
+#[allow(missing_docs)]
+pub trait RealField: num::Bounded + na::RealField + Copy {
+    fn max_bound() -> Self {
+        <Self as num::Bounded>::max_value()
+    }
+}
+impl<T: num::Bounded + na::RealField + Copy> RealField for T {}
+
 /// Compilation flags dependent aliases for mathematical types.
 #[cfg(feature = "dim3")]
 pub mod math {

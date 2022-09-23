@@ -5,9 +5,10 @@ use std::iter;
 use std::ops::AddAssign;
 use std::sync::Arc;
 
+use crate::RealField;
 use na::{
     self, Cholesky, DMatrix, DVector, DVectorSlice, DVectorSliceMut, Dynamic, Matrix2, Matrix2x3,
-    Point2, Point3, RealField, Unit, Vector2, Vector3,
+    Point2, Point3, Unit, Vector2, Vector3,
 };
 use ncollide::shape::{DeformationsType, Polyline, ShapeHandle};
 use ncollide::utils::{self, DeterministicState};
@@ -594,7 +595,7 @@ impl<N: RealField> FEMSurface<N> {
         }
 
         for elt in &mut self.elements {
-            elt.indices.coords.apply(|i| dof_map[i]);
+            elt.indices.coords.apply(|i| *i = dof_map[*i]);
         }
 
         self.positions = new_positions;

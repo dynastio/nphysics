@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 
 /// Logical information of the geometry of a constraint.
 #[derive(Copy, Clone, Debug, Default)]

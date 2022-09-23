@@ -1,4 +1,5 @@
-use na::{DVector, RealField};
+use crate::RealField;
+use na::{DVector};
 use ncollide::query::ContactId;
 
 use crate::counters::Counters;

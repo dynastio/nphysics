@@ -1,7 +1,7 @@
 use std::f64;
 use std::sync::Arc;
 
-use na::RealField;
+use crate::RealField;
 use ncollide::pipeline::{
     BroadPhaseProxyHandle, CollisionGroups, CollisionObject, CollisionObjectGraphIndex,
     CollisionObjectRef, CollisionObjectUpdateFlags, GeometricQueryType,

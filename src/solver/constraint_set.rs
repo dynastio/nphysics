@@ -3,7 +3,7 @@ use crate::solver::{
     BilateralConstraint, BilateralGroundConstraint, NonlinearUnilateralConstraint,
     UnilateralConstraint, UnilateralGroundConstraint,
 };
-use na::RealField;
+use crate::RealField;
 
 /// Set of velocity-based constraints.
 pub struct LinearConstraints<N: RealField, Id> {

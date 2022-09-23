@@ -2,7 +2,7 @@
 
 use downcast_rs::Downcast;
 use generational_arena::Arena;
-use na::RealField;
+use crate::RealField;
 
 use crate::object::{BodyHandle, BodySet, DefaultBodyHandle};
 use crate::solver::IntegrationParameters;

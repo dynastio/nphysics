@@ -1,4 +1,5 @@
-use na::{DVector, RealField, Unit};
+use crate::RealField;
+use na::{DVector, Unit};
 use std::ops::Range;
 
 use crate::joint::JointConstraint;
@@ -50,8 +51,8 @@ impl<N: RealField, Handle: BodyHandle> PlanarConstraint<N, Handle> {
             axis2,
             lin_impulse: N::zero(),
             ang_impulses: [N::zero(), N::zero()],
-            break_force_squared: N::max_value(),
-            break_torque_squared: N::max_value(),
+            break_force_squared: N::max_bound(),
+            break_torque_squared: N::max_bound(),
             broken: false,
             bilateral_ground_rng: 0..0,
             bilateral_rng: 0..0,

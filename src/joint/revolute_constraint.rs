@@ -1,6 +1,7 @@
 #[cfg(feature = "dim3")]
 use na::Unit;
-use na::{DVector, RealField};
+use crate::RealField;
+use na::{DVector};
 use std::ops::Range;
 
 use crate::joint::JointConstraint;
@@ -75,8 +76,8 @@ impl<N: RealField, Handle: BodyHandle> RevoluteConstraint<N, Handle> {
             axis2,
             lin_impulses: Vector::zeros(),
             ang_impulses: AngularVector::zeros(),
-            break_force_squared: N::max_value(),
-            break_torque_squared: N::max_value(),
+            break_force_squared: N::max_bound(),
+            break_torque_squared: N::max_bound(),
             broken: false,
             bilateral_ground_rng: 0..0,
             bilateral_rng: 0..0,
@@ -105,8 +106,8 @@ impl<N: RealField, Handle: BodyHandle> RevoluteConstraint<N, Handle> {
             anchor2,
             lin_impulses: Vector::zeros(),
             ang_impulses: AngularVector::zeros(),
-            break_force_squared: N::max_value(),
-            break_torque_squared: N::max_value(),
+            break_force_squared: N::max_bound(),
+            break_torque_squared: N::max_bound(),
             broken: false,
             bilateral_ground_rng: 0..0,
             bilateral_rng: 0..0,

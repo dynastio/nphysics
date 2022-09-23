@@ -2,7 +2,8 @@ use num::Zero;
 
 use crate::math::{AngularInertia, Point};
 use crate::volumetric::{InertiaTensor, Volumetric};
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 use ncollide::shape::Compound;
 
 impl<N: RealField> Volumetric<N> for Compound<N> {

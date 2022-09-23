@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 
 use crate::material::{LocalMaterialProperties, Material, MaterialCombineMode, MaterialContext};
 

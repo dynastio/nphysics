@@ -3,7 +3,8 @@ use crate::object::{Body, BodyHandle, BodySet, ColliderSet};
 use crate::utils::union_find;
 use crate::utils::union_find::UnionFindSet;
 use crate::world::GeometricalWorld;
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 
 /// Structure that monitors island-based activation/deactivation of bodies.
 ///

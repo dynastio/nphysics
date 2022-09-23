@@ -1,5 +1,6 @@
 use downcast_rs::Downcast;
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 use std::ops::Deref;
 use std::sync::Arc;
 

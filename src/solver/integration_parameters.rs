@@ -1,4 +1,5 @@
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 
 /// Parameters for a time-step of the physics engine.
 #[derive(Clone)]

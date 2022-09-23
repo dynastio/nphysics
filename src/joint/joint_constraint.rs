@@ -2,7 +2,8 @@
 
 use downcast_rs::Downcast;
 use generational_arena::Arena;
-use na::{DVector, RealField};
+use crate::RealField;
+use na::{DVector};
 
 use crate::object::{BodyHandle, BodyPartHandle, BodySet, DefaultBodyHandle};
 use crate::solver::{IntegrationParameters, LinearConstraints, NonlinearConstraintGenerator};

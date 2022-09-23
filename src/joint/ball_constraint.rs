@@ -1,4 +1,5 @@
-use na::{DVector, RealField};
+use crate::RealField;
+use na::{DVector};
 use std::ops::Range;
 
 use crate::joint::JointConstraint;
@@ -40,7 +41,7 @@ impl<N: RealField, Handle: BodyHandle> BallConstraint<N, Handle> {
             anchor1,
             anchor2,
             impulses: Vector::zeros(),
-            break_force_squared: N::max_value(),
+            break_force_squared: N::max_bound(),
             broken: false,
             bilateral_ground_rng: 0..0,
             bilateral_rng: 0..0,

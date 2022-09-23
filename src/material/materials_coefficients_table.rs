@@ -1,4 +1,4 @@
-use na::RealField;
+use crate::RealField;
 use ncollide::utils::SortedPair;
 use std::collections::HashMap;
 

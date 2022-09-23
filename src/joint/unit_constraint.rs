@@ -1,4 +1,5 @@
-use na::{DVector, RealField, Unit};
+use crate::RealField;
+use na::{DVector, Unit};
 
 use crate::math::{Point, Vector};
 use crate::object::{Body, BodyHandle, BodyPart, BodyPartHandle};
@@ -90,12 +91,12 @@ pub fn build_linear_limits_velocity_constraint<N: RealField, B: ?Sized + Body<N>
     let limits = if unilateral {
         ImpulseLimits::Independent {
             min: N::zero(),
-            max: N::max_value(),
+            max: N::max_bound(),
         }
     } else {
         ImpulseLimits::Independent {
-            min: -N::max_value(),
-            max: N::max_value(),
+            min: -N::max_bound(),
+            max: N::max_bound(),
         }
     };
 

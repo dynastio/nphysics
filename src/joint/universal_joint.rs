@@ -1,4 +1,5 @@
-use na::{self, DVectorSliceMut, Isometry3, RealField, Translation3, Unit, Vector3};
+use crate::RealField;
+use na::{self, DVectorSliceMut, Isometry3, Translation3, Unit, Vector3};
 
 use crate::joint::{Joint, RevoluteJoint};
 use crate::math::{JacobianSliceMut, Velocity};

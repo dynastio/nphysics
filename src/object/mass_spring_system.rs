@@ -5,10 +5,11 @@ use std::iter;
 use std::marker::PhantomData;
 use std::ops::{AddAssign, SubAssign};
 
+use crate::RealField;
 #[cfg(feature = "dim3")]
 use na::Vector2;
 use na::{
-    self, Cholesky, DMatrix, DVector, DVectorSlice, DVectorSliceMut, Dynamic, RealField, Unit,
+    self, Cholesky, DMatrix, DVector, DVectorSlice, DVectorSliceMut, Dynamic, Unit,
 };
 #[cfg(feature = "dim3")]
 use ncollide::procedural;

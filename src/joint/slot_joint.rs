@@ -1,4 +1,5 @@
-use na::{self, RealField, U3, VectorSlice3, Vector, Point, Matrix3, Isometry, Translation3, UnitQuaternion};
+use crate::RealField;
+use na::{self, U3, VectorSlice3, Vector, Point, Matrix3, Isometry, Translation3, UnitQuaternion};
 
 use crate::utils::GeneralizedCross;
 use crate::joint::Joint;

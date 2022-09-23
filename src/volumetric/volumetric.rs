@@ -1,7 +1,8 @@
 //! Traits to compute inertial properties.
 
 use crate::math::{AngularInertia, Inertia, Isometry, Point};
-use na::{self, RealField};
+use crate::RealField;
+use na::{self};
 use na::{Isometry2, Isometry3, Matrix1, Matrix3, Point2, Point3, Vector1, Vector3};
 
 /// Trait implemented by inertia tensors.

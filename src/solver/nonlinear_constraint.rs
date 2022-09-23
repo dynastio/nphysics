@@ -1,4 +1,5 @@
-use na::{RealField, Unit};
+use crate::RealField;
+use na::{Unit};
 use ncollide::query::ContactKinematic;
 
 use crate::math::Vector;

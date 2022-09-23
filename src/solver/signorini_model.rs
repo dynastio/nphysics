@@ -1,4 +1,5 @@
-use na::{self, DVector, RealField};
+use crate::RealField;
+use na::{self, DVector};
 use std::ops::Range;
 
 use crate::detection::ColliderContactManifold;

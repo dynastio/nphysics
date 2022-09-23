@@ -1,4 +1,5 @@
-use na::{DVector, RealField, Unit};
+use crate::RealField;
+use na::{DVector, Unit};
 
 use crate::joint::JointConstraint;
 use crate::math::{Point, Vector, DIM};
